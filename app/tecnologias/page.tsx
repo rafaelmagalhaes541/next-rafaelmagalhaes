@@ -4,10 +4,12 @@ import Link from "next/link";
 
 export default function tecnologias() {
     return(
-        <div className="items-center">
+        <div className="m-4">
             {data.map((element, index) => (
                 <Link href={"/tecnologias/${index}"}>
-                    <Tecnologia key={index} titulo={element.title} />
+                    <div className="bg-blue-500 p-4 rounded-lg mb-3">
+                        <Tecnologia key={index} titulo={element.title}/>
+                    </div>
                 </Link>
             ))}
         </div>

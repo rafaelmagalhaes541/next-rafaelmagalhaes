@@ -10,7 +10,6 @@ export default function TecnologiaPage() {
     return(
         <>
             <h2>{tecnologias[id].title}</h2>
-            <p>{tecnologias[id].description}</p>
         </>
     )
 }
